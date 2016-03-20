@@ -31,6 +31,8 @@ Actions.Blocker.append.listen(function (type, el) {
       buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'orderedlist', 'unorderedlist', 'removeFormat']
     }
   });
+
+  $('.editable').get(0).focus();
 });
 
 
