@@ -32,7 +32,9 @@ Actions.Blocker.append.listen(function (type, el) {
     }
   });
 
-  $('.editable').get(0).focus();
+  if ($('.editable').length !== 0) {
+    $('.editable').get(0).focus();
+  }
 });
 
 
