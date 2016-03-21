@@ -10,10 +10,18 @@
 
 .u-flexCenter
 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #draggable-content-container
@@ -103,7 +111,7 @@
 
 .blocker.image:hover:after
 {
-    background-position: -283px -290px;
+     background-position: 0 -1419.5px;
 }
 
 .blocker.image:after
@@ -121,29 +129,14 @@
     pointer-events: none;
     pointer-events: none;
 
-    background-image: url(./index.png);
-    background-repeat: no-repeat;
-    background-position: -189px -290px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.3),(min-resolution:124.8dpi)
-{
-    .blocker.image:hover:after
-    {
-        background-position: 0 -1419.5px;
-    }
-
-    .blocker.image:after
-    {
         background-image: url(./index.png);
         background-position: 0 -719.5px;
         background-size: 140px auto;
-    }
 }
 
 .blocker.text:hover:after
 {
-    background-position: -435px -190px;
+     background-position: 0 -1019.5px;
 }
 
 .blocker.text:after
@@ -161,28 +154,13 @@
     pointer-events: none;
 
     background-image: url(./index.png);
-    background-repeat: no-repeat;
-    background-position: -95px -290px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.3),(min-resolution:124.8dpi)
-{
-    .blocker.text:hover:after
-    {
-        background-position: 0 -1019.5px;
-    }
-
-    .blocker.text:after
-    {
-        background-image: url(./index.png);
-        background-position: 0 -1319.5px;
-        background-size: 140px auto;
-    }
+    background-position: 0 -1319.5px;
+    background-size: 140px auto;
 }
 
 .blocker.button:hover:after
 {
-    background-position: 0 -100px;
+   background-position: 0 -1841.5px;
 }
 
 .blocker.button:after
@@ -200,23 +178,8 @@
     pointer-events: none;
 
     background-image: url(./index.png);
-    background-repeat: no-repeat;
-    background-position: -95px -100px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.3),(min-resolution:124.8dpi)
-{
-    .blocker.button:hover:after
-    {
-        background-position: 0 -1841.5px;
-    }
-
-    .blocker.button:after
-    {
-        background-image: url(./index.png);
-        background-position: 0 -2069px;
-        background-size: 140px auto;
-    }
+    background-position: 0 -2069px;
+    background-size: 140px auto;
 }
 
 .blocker.gu-mirror
